@@ -13,8 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox' "Gruvbox color theme
 
 Plugin 'thoughtbot/vim-rspec' "For running rspec
-Plugin 'tpope/dispatch.vim'
-
+Plugin 'tpope/vim-dispatch'
 " Plugin 'jelera/vim-javascript-syntax'
 " Plugin 'pangloss/vim-javascript'
 " Plugin 'nathanaelkane/vim-indent-guides'
@@ -40,3 +39,6 @@ map <Leader>a :call RunAllSpecs()<CR>
 " autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
 
 set grepprg=ag
+
+let g:rspec_command = "Dispatch rspec {spec}"
+
